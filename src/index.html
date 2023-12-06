@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Jquery - Ajax</title>
+  </head>
+
+  <body>
+    <header class="bg-black">
+      <h1 class="text-3xl text-center py-3 text-white">
+        Jquery'de Ajax Çağrıları
+      </h1>
+    </header>
+
+    <main>
+      <section class="py-3">
+        <h2 class="text-3xl font-bold mb-4 text-center text-red-500">
+          Load Metodu
+        </h2>
+        <p class="text-lg text-gray-700 text-center" id="load"></p>
+      </section>
+
+      <section class="py-3">
+        <h2 class="text-3xl font-bold mb-4 text-center text-red-500">
+          Get Metodu
+        </h2>
+        <p class="text-center mb-3">
+          Aşağıda
+          <a
+            href="https://jsonplaceholder.typicode.com/users"
+            class="text-blue-500"
+            target="_blank"
+            >Jsonplaceholder</a
+          >
+          adresinden gelen kullanıcı verilerinin get metoduyla listelenmesini
+          görüyorsunuz.
+        </p>
+        <ul class="text-center" id="get"></ul>
+      </section>
+
+      <section>
+        <h2 class="text-3xl font-bold mb-4 text-center text-red-500">
+          Post Metodu
+        </h2>
+
+        <p class="text-center mb-3">
+          Aşağıda
+          <a
+            href="https://jsonplaceholder.typicode.com/posts"
+            class="text-blue-500"
+            target="_blank"
+            >Jsonplaceholder-Posts</a
+          >
+          adresine veri göndermek üzere yerleştirilmiş bir form görüyorsunuz.
+          Gerekli alanları doldurduktan sonra formun gönderildiğine dair bir
+          alert mesajı alacaksınız.
+        </p>
+
+        <form id="postForm" class="w-full max-w-lg mx-auto mt-5">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="title"
+              >
+                Başlık
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="title"
+                type="text"
+                placeholder="Başlık"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="body"
+              >
+                Ana içerik
+              </label>
+              <textarea
+                class="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                id="body"
+                placeholder="Ana içerik"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/3">
+              <button
+                class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                type="submit"
+              >
+                Gönder
+              </button>
+            </div>
+            <div class="md:w-2/3"></div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

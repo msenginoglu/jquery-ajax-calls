@@ -1,0 +1,1 @@
+Şu anda load metoduyla projenin src klasöründe bulunan data.txt dosyasından gelen veriyi görüyorsunuz. Eğer bir şekilde veriler alınamazsa hata mesajı ekranda gözükecektir. Hata mesajı için projenin src klasöründe bulunan script.js dosyasına bakabilirsiniz.
